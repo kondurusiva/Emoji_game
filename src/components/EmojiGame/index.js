@@ -34,7 +34,7 @@ class EmojiGame extends Component {
       <WinOrLoseCard
         isWon={isWon}
         score={clickedEmojisList.length}
-        onClickPlayAgain={this.resetGame}
+        clickPlayAgain={this.resetGame}
       />
     )
   }
@@ -58,7 +58,7 @@ class EmojiGame extends Component {
     if (isEmojiPresent) {
       this.finishGameAndSetTopScore(clickEmojisLength)
     } else {
-      if (clickedEmojisList.length - 1 === clickEmojisLength) {
+      if (emojisList.length - 1 === clickEmojisLength) {
         this.finishGameAndSetTopScore(emojisList.length)
       }
       this.setState(prevState => ({
