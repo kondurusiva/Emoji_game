@@ -2,9 +2,9 @@
 import './index.css'
 
 const WinOrLoseCard = props => {
-  const {score, isWon, onClickPlayAgain} = props
+  const {score, isWon, clickPlayAgain} = props
   const winOrLose = isWon ? 'You Won' : 'You Lose'
-  const scoreLabel = isWon ? 'Best Score' : 'score'
+  const scoreLabel = isWon ? 'Best Score' : 'Score'
 
   const imageUrl = isWon
     ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png'
@@ -16,7 +16,7 @@ const WinOrLoseCard = props => {
         <h1 className="heading">{winOrLose}</h1>
         <p className="scoreLabel">{scoreLabel}</p>
         <p className="score">{score}/12</p>
-        <button className="button" type="button" onClick={onClickPlayAgain}>
+        <button className="button" type="button" onClick={clickPlayAgain}>
           Play Again
         </button>
       </div>
