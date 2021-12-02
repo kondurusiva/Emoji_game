@@ -1,0 +1,39 @@
+/* Write your code here. */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff33;
+  padding: 8px;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 80%;
+  max-width: 1000px;
+}
+
+.emoji-logo {
+  width: 48px;
+}
+.logo-and-titleContainer {
+  align-items: center;
+  display: flex;
+}
+.scores-container {
+  display: flex;
+}
+
+.title {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.scores {
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Roboto';
+  margin-left: 32px;
+}
